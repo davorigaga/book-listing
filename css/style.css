@@ -1,0 +1,495 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: black; 
+
+}
+
+/*Header*/
+header{
+	background: white;
+	margin: 0;
+	padding: 10px;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+}
+
+header ul{
+	list-style: none; 
+	float: right;
+	padding-right: 100px;
+}
+header ul li{
+	display: inline-block;
+	padding: 10px;
+}
+header ul li a{
+	text-decoration: none; 
+	color: black;
+	font-size: 15px; 
+	text-shadow: 2px 2px 2px silver; 
+
+}
+header ul li a:hover, header ul li a:active, header ul li a:focus{
+	border-top: 5px solid red; 
+	margin-top: 0; 
+	padding-top: 10px;
+	width: 100%;
+	text-decoration: none;
+	color: red;
+
+
+}
+header img{
+	margin-top: 2px;
+	height: 50px; 
+	width: 50px;
+	border-radius: 0 50% 0 50%; 
+	padding-left: 0;
+	margin: 0;
+	margin-bottom: 30px;
+}
+header p{
+	padding-left: 18px;
+	padding-top: 0;
+	margin-left: 0;
+	margin-top: 0;
+	float: left;
+	font-family: Vivaldi;
+	font-size: 15px; 
+}
+
+section{
+	background: white;
+	height: 400px;
+	width: 100%;
+	background: #ccc url(../images/img2.png) no-repeat center; 	
+	background-size: cover;
+}
+section p{
+	text-align: center;
+	padding-top: 20px;
+	font-weight: bolder; 
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px grey; 
+}
+#services{
+	background: rgb(150 0 0);
+	height: 200px;
+	width: 100%;
+	color: white;
+}
+#services #classHeading{
+	text-align: center;
+	padding-top: 15px;
+	font-size: 30px;
+	font-style: italic;
+	color: white; 
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px grey; 
+}
+#services #serviceText{
+	text-align: center; 
+	font-style: italic;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#about{
+	height: 300px;
+	width: 100%;
+	background: white;  
+	text-align: center;
+	padding-bottom: 0;
+}
+
+#about span{
+	font-size: 24px;
+	padding-top: 15px; 
+	font-weight: bolder; 
+	color: black; 
+	border-bottom: 5px solid red; 
+
+}
+#about h2{
+	margin-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 20px;
+	font-weight: bolder; 
+}
+#about ul{
+	font-size: 20px;
+	font-style: italic;
+	color: black;
+
+}
+#main{
+	text-align: center;
+	margin: 0;
+	width: 100%; 
+	height: 50px;
+	background: radial-gradient(black, red); 
+}
+#main p{
+
+	font-size: 32px;
+	padding-top: 2px; 
+	padding-bottom: 0; 
+	margin-bottom: 10px;
+	font-weight: bolder; 
+	color: white; 
+	border-bottom: 2px solid white;
+	border-width: 50%; 
+	text-align: center; 
+
+}
+
+/*Grid Template Method*/
+#contact-us{
+	width: 100%; 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+	margin: 0;
+	background: linear-gradient(white, red); 
+	padding: 10px 10px;
+}
+#contact-us #address-details{
+	margin: 0;
+	height: auto;
+	padding-top: 10px;
+	border-right: 5px solid black;
+	display: grid;
+	grid-column: 1fr; 
+	background: linear-gradient(white, red);
+	border-left: 5px solid black;
+	border-radius: 20px 0 0 20px;
+}
+#contact-us #social-links{
+	height: auto;
+	border-right: 5px solid black;
+	display: grid;
+	grid-column: 1fr; 
+	background: linear-gradient(white, red);
+}
+#contact-us #message{
+	height: auto;
+	border-right: 5px solid black;
+	display: grid;
+	grid-column: 1fr; 
+	background: linear-gradient(white, red);
+	border-radius: 0 20px 20px 0;
+}
+#main #contact-us #address-details address{
+	text-align: left;
+	padding-left: 20px; 
+	font-weight: bolder; 
+	font-size: 20px; 
+	color: black;
+	margin-bottom: 0;
+}
+.clear{
+	clear: both; 
+}
+#main #contact-us #address-details ul{
+	text-align: left;
+	padding-left: 20px; 
+	list-style: none;
+	font-size: 24px; 
+	color: black;
+	padding: 10px;	
+}
+#social-links p{
+	text-transform: uppercase;
+	text-align: left;
+	height: 0; 
+	font-size: 24px; 
+	color: black;
+	font-weight: bolder;
+	padding-left: 10px;
+	padding-right: 10px; 
+	padding-top: 5px; 
+	padding-bottom: 0; 
+	margin: 0; 
+
+}
+#social-links ul{
+	list-style: none; 
+	text-align: left; 
+	padding-left: 10px;
+	margin: 0; 
+	padding-top: 0;
+
+}
+#message p{
+	text-transform: uppercase;
+	text-align: center;
+	height: 0; 
+	font-size: 24px; 
+	color: black;
+	font-weight: bolder;
+	padding-left: 10px;
+	padding-right: 10px; 
+	padding-top: 5px; 
+	padding-bottom: 0; 
+	margin: 0; 
+
+}
+#message form{
+	padding-top: 20px;
+	padding: 10px;
+	margin: 0; 
+
+
+}
+
+form input[type="submit"]{
+	float: left;
+	margin-left: 140px;
+	padding: 5px;
+	background: silver; 
+}
+form input[type="reset"]{
+	float: right;
+	margin-right: 70px;
+	padding: 5px;
+	background: silver; 
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+	background: red;
+	color: white;
+	font-weight: bolder;
+	box-shadow: 2px 2px 2px black; 
+}
+input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus{
+	background: pink;
+	color: black;
+	font-weight: bolder;
+	box-shadow: 1px 1px 1px silver; 
+}
+input[type="email"]:hover, input[type="email"]:active, input[type="email"]:focus{
+	background: pink;
+	color: black;
+	font-weight: bolder;
+	box-shadow: 1px 1px 1px silver; 
+}
+textarea:hover, textarea:active, textarea:focus{
+	background: pink;
+	color: black;
+	font-weight: bolder;
+	box-shadow: 1px 1px 1px silver; 
+}
+
+#social-links ul #fbk{
+	margin-left: 2px;
+	margin-top: 10px;
+	font-size: 25px;
+	padding-left: 10px;
+	color: black;
+	text-transform: capitalize;
+}
+#social-links ul #fbk a{
+	text-decoration: none;
+	color: white;
+}
+#social-links ul #fbk a:hover, #social-links ul #fbk a:active, #social-links ul #fbk a:focus{
+	text-decoration: none;
+	color: blue;
+}
+/*Twitter link*/
+#social-links ul #twitter{
+	margin-left: 2px;
+	margin-top: 10px;
+	font-size: 25px;
+	padding-left: 10px;
+	color: black;
+	text-transform: capitalize;
+}
+#social-links ul #twitter a{
+	text-decoration: none;
+	color: white;
+}
+#social-links ul #twitter a:hover, #social-links ul #twitter a:active, #social-links ul #twitter a:focus{
+	text-decoration: none;
+	color: blue;
+}
+
+/*Instagram link icon*/
+#social-links ul #instagram{
+	margin-left: 2px;
+	margin-top: 10px;
+	font-size: 25px;
+	padding-left: 10px;
+	color: black;
+	text-transform: capitalize;
+}
+#social-links ul #instagram a{
+	text-decoration: none;
+	color: white;
+}
+#social-links ul #instagram a:hover, #social-links ul #instagram a:active, #social-links ul #instagram a:focus{
+	text-decoration: none;
+	color: blue;
+}
+
+/*whatsapp icon link*/
+#social-links ul #whatsapp{
+	margin-left: 2px;
+	margin-top: 10px;
+	font-size: 25px;
+	padding-left: 10px;
+	color: black;
+	text-transform: capitalize;
+}
+#social-links ul #whatsapp a{
+	text-decoration: none;
+	color: white;
+}
+#social-links ul #whatsapp a:hover, #social-links ul #whatsapp a:active, #social-links ul #whatsapp a:focus{
+	text-decoration: none;
+	color: blue;
+}
+#subscribe{
+	height: 100px;
+	width: 100%;
+	color: red;
+	padding-top: 20px;
+	background: silver;
+
+
+}
+#subscribe label{
+	font-size: 20px;
+}
+#subscribe input[type="email"]{
+	width: 300px;
+	height: 30px;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.foot{
+	height: 1cm;
+	width: 100%; 
+	background: red; 
+	color: white;
+	margin-bottom: 0;
+	margin-top: 525px;
+
+
+}
+.foot p{
+	font-style: italic;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+
+.phone{
+	height: 520px;
+	margin-top: 200px;
+	width: 25%;
+	background: silver;
+	box-shadow: 2px 2px 2px white; 
+	border-radius: 20px;
+}
+
+.phone-group{
+	text-align: center;
+	padding: 2px;
+	/*padding-top: -0.1cm;*/
+	/*margin-top: 0.1px;*/
+}
+
+.piece{
+
+	width: 0.5cm;
+	height: 0.5cm;
+	background: grey;
+	margin-top: 10px;
+	border-radius: 50%;
+	
+}
+.hole{
+	background: grey; 
+	height: 0.3cm;
+	width: 1.5cm;
+	border-radius: 10px; 
+	margin-top: 10px;
+	padding: 0;
+}
+.screen{
+	height: 200px;
+	width: 80%;
+	background: white;
+	margin-top: 10px;
+	background: url(../images/screen.jpg) center;
+	background-size: cover;
+	padding-top: 100px;
+
+}
+.circle1{
+	border-radius: 50%; 
+	height: 80px;
+	width: 100px;
+	background: white;
+	padding-top: 20px;
+}
+.circle2{
+	border-radius: 100%; 
+	height: 60px;
+	width: 60px;
+	background: grey;
+
+}
+.rectangle{
+	height: 10px; 
+	width: 90px;
+	background: white;
+}
+.social-links{
+	height: 70px;
+	width: 80%;
+	background: white;
+	opacity: 0.8;
+
+
+}
+.social-links ul{
+	list-style: none;
+	/*height: 0px;*/
+	width: 100%;
+	
+}
+.social-links ul li{
+	display: inline-block;
+	padding-top: 20px;
+	
+}
+.social-links ul li a{
+	text-decoration: none;
+	padding: 20px;
+}
+.trackpad{
+	border-radius: 50%;
+	height: 40px;
+	background: white;
+	margin-top: 10px;
+	width: 50px;
+	box-shadow: 2px 2px 2px black; 
+	padding-top: 5px; 
+	padding-bottom: 4px;
+}
+.trackpad .pad{
+	margin-top: 10px;
+	height: 15px; 
+	width: 15px;
+	border: 2px solid black;
+}

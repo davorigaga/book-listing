@@ -1,0 +1,159 @@
+*{
+	margin: 0; 
+	padding: 0;
+}
+@media screen and (min-width: 720px){
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.container{
+		width: 720px;
+		height: 1200px;
+		background: none; 
+	}
+	.container .head{
+		height: 15%;
+		margin: 0; 
+		width: 100%; 
+		background: transparent;
+	}
+	.container .head .head-group p{
+		width: 100%;
+		height: 50px;
+		display: inline-block;
+		padding: 30px;
+		font-size: 100px;
+		color: black; 
+	}
+	.book{
+		color: blue;
+		font-size: 100px;
+
+	}
+	.container .head .head-group p .blue-heading{
+		color: blue;
+	}
+
+	.container .bookInfo{
+		height: 40%; 
+		width: 100%; 
+		background: white;
+		padding-left: 10px;
+		margin: 0;
+	}
+	.container .bookInfo form{
+		width: 100%; 
+		height: 100%;
+		font-size: 40px;
+		text-align: left;
+	}
+	.container .bookInfo label{
+		width: 100%;
+		height: 200px;
+		font-weight: bold;
+	}
+	.container .bookInfo form .title{
+		height: 60px;
+		width: 96%;
+		padding-left: 10px;
+		font-size: 50px;
+		border-radius: 30px;
+		box-shadow: 2px 2px 2px black; 
+	}
+	.container .bookInfo form input[type="text"]:hover, .container .bookInfo form input[type="text"]:active, .container .bookInfo form input[type="text"]:focus{
+		background: lightblue;
+
+	}
+	.container .bookInfo form .author{
+		height: 60px;
+		width: 96%;
+		padding-left: 10px;
+		font-size: 50px;
+		border-radius: 30px;
+		box-shadow: 2px 2px 2px black; 
+	}
+	.container .bookInfo form .ISBN{
+		height: 60px;
+		width: 96%;
+		padding-left: 10px;
+		font-size: 50px;
+		border-radius: 30px;
+		box-shadow: 2px 2px 2px black; 
+	}
+
+	.container .bookInfo form .submit{
+		height: 60px;
+		width: 96%;
+		background: blue;
+		color: white;
+		font-weight: bold;
+		float: center;
+		font-size: 50px;
+		margin-top: 10px;
+		border-radius: 30px;
+		box-shadow: 2px 2px 2px black; 
+	}
+
+	.container .bookInfo form .submit:hover{
+		background: red;
+		color: white;
+	}
+	.container .displayResult{
+		min-height: 80px;
+		width: 96%;
+		background: white; 
+	}
+	.container .displayResult table{
+		min-height: 80px;
+		width: 100%;
+		border-color: none; 
+		text-align: left; 
+		font-size: 30px;
+	}
+	table thead{
+		background: lightblue;
+	}
+	.displayResult tr:nth-child(even){
+		background: lightblue; 
+		color: black;
+	}
+	.container .displayResult table tr td{
+		padding: 10px;
+	}
+	.container .displayResult table tr td a{
+		text-decoration: none; 
+	}
+	.delete{
+		font-weight: bold; 
+		color: white;
+		background: red;
+		padding: 10px;
+		border-radius: 4px;
+	}
+	.alert-danger{
+		padding: 10px;
+		font-style: italic;
+		font-weight: bold;
+		margin-top: 30px;
+		border-radius: 10px; 
+		background: red; 
+		color: white;
+		height: 50px;
+		width: 80%;
+		font-size: 30px;
+	}
+	.alert-success{
+		padding: 10px;
+		font-style: italic;
+		font-weight: bold;
+		margin-top: 30px;
+		border-radius: 10px; 
+		background: green; 
+		text-transform: capitalize;
+		color: white;
+		height: 50px;
+		width: 80%;
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Listing Application</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<center>
+		<div class="container">
+			<div class="head">
+				<div class="head-group">
+					<p><i class="fa fa-book book"> </i> My<span class="blue-heading">Book</span>List</p>
+				</div>
+				
+			</div>
+			<div class="bookInfo">
+				<form class="book-form" method="GET">
+					<label>Title<br/>
+						<input type="text" name="" placeholder="Book Title" class="title">
+					</label>
+					<label>Author<br/>
+						<input type="text" name="" placeholder="Book Author" class="author">
+					</label>
+					<label>ISBN<br/>
+						<input type="text" name="" placeholder="Book ISBN" class="ISBN">
+					</label>
+					<input type="SUBMIT" name="SUBMIT" value="Add Book" class="submit">
+					
+				</form>
+			
+			</div>
+			<div class="displayResult">
+				<table cellspacing="2" cellpadding="1" border="0" >
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Author</th>
+							<th>ISBN</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody class="book-list">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</center>
+	<script type="text/javascript" src="book.js"></script>
+</body>
+</html>
